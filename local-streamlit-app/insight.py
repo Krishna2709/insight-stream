@@ -35,6 +35,7 @@ class ResearchPapersWithTitlesAndAbstracts(BaseModel):
         description="List of research papers, each with a title and abstract"
     )
 
+# =========== Video Analyzer =========== #
 class VideoAnalysis:
     def __init__(self):
         self.llm = OpenAI(model= "gpt-4", temperature=0.2)
@@ -65,7 +66,7 @@ class VideoAnalysis:
             "papers": [{"title": paper.title, "abstract": paper.abstract} for paper in papers.papers]
         }
 
-
+# =========== Chatbot =========== #
 def chat_engine(prompt, youtube_engine, vector_engine, llm):
     query_engine_tools = [
         QueryEngineTool(
