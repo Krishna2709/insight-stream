@@ -1,0 +1,9 @@
+cohere==4.37
+deeplake==3.8.23
+llama-index==0.10.17
+llama-index-agent-openai==0.1.5
+llama-index-llms-openai==0.1.7
+llama-index-readers-youtube-transcript==0.1.4
+llama-index-vector-stores-deeplake==0.1.2
+openai==1.3.8 
+python-dotenv==1.0.1
